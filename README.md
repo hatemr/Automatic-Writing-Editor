@@ -28,7 +28,7 @@ slate, then try the methods found in literature.
 2. Automated Essay Scoring, text classification: https://www.kaggle.com/c/asap-aes/data
 
 # BERT Overview
-todo
+[todo]
 
 # References
 * `pytorch_transformers` (Huggingface): https://github.com/huggingface/pytorch-transformers
