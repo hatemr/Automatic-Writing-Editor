@@ -2,7 +2,7 @@
 Ror essay grading
 
 # Business Problem
-Clear and effective communication is hard, especially in a business with complext goals and shifting demands. That's why I am building a writing editor, to automatically grade one's writing. This tool aims to help people write reports in clear, concise prose.
+Clear and effective communication is hard. Especially in a business with complex goals and shifting demands. That's why I am building a writing editor, to automatically grade one's writing. This tool aims to help people write reports in clear, concise prose.
 
 ## Plan (in progress)
 1. Start with BERT. Get it to run, see which tasks it performs on.
