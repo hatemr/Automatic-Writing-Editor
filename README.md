@@ -1,9 +1,10 @@
 # Text Classification
-Text classification for essay grading
-
+Ror essay grading
 
 # Business Problem
+Clear and effective communication is hard, especially in a business with complext goals and shifting demands. That's why I am building a writing editor, to automatically grade one's writing. This tool aims to help people write reports in clear, concise prose.
 
+## Plan (in progress)
 1. Start with BERT. Get it to run, see which tasks it performs on.
 2. Use HuggingFace's pytorch_transformers to try BERT.
   * I tried BERT. The fine-tuning step takes too long on a CPU. However, I think that
@@ -15,7 +16,7 @@ Text classification for essay grading
 3. For my automatic essay scoring model, the paper proposes a NN model and compares
 to two baselines, readily available. I guess I should take a stab at it from a blank-
 slate, then try the methods found in literature.
-
+4. The dataset might be too small for BERT. Also, BERT might be overkill. But hey, why not?
 
 * https://github.com/NirantK/awesome-project-ideas#text
 
@@ -26,8 +27,7 @@ slate, then try the methods found in literature.
 2. Automated Essay Scoring, text classification: https://www.kaggle.com/c/asap-aes/data
 
 # BERT Overview
-
-
+todo
 
 # References
 * `pytorch_transformers` (Huggingface): https://github.com/huggingface/pytorch-transformers
