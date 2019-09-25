@@ -4,7 +4,8 @@ For essay scoring.
 # Business Problem
 Clear and effective communication is hard. Especially in a business with complex goals and shifting demands. That's why I am building a writing editor, to automatically grade one's writing. This tool aims to help people write reports in clear, concise prose.
 
-## Plan (in progress)
+## Plan
+[in progress]
 1. Start with BERT. Get it to run, see which tasks it performs on.
 2. Use HuggingFace's pytorch_transformers to try BERT.
   * I tried BERT. The fine-tuning step takes too long on a CPU. However, I think that
