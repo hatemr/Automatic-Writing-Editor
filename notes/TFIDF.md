@@ -56,7 +56,7 @@ The tf term grows too quickly with its frequency: 20 occurences doesn't signal 2
 
 $$ wf_{t,d} = 1+\log tf_{t,d} if tf_{t,d}>0 else 0. $$
 
-![sublinear tf](..images/sublinear_tf.png)
+![sublinear tf](../images/sublinear_tf.png)
 
 And we replace tf with wf:
 
