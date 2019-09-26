@@ -5,19 +5,12 @@ For essay scoring.
 Clear and effective communication is hard. Especially in a business with complex goals and shifting demands. That's why I am building a writing editor, to automatically grade one's writing. This tool aims to help people write reports in clear, concise prose.
 
 ## Plan
-[in progress]
-* Start with TFIDF approaches. Then try LSTMs, and add attention. If we get really far, then maybe BERT. But that's overkill.
-* Use HuggingFace's pytorch_transformers to try BERT.
-  * I tried BERT. The fine-tuning step takes too long on a CPU. However, I think that
-  fine-tuning just applies softmax regression with the final hidden layer as input(?).
-  If so, then it's straightforward to extend BERT to our task. However, I should try
-  simpler approaches first.
-  * Indeed, I found exactly such a blog. I guess I could try it along with other
-  approaches to grade the essays.
-* For my automatic essay scoring model, the paper proposes a NN model and compares
-to two baselines, readily available. I guess I should take a stab at it from a blank-
-slate, then try the methods found in literature.
-* The dataset might be too small for BERT. Also, BERT might be overkill. But hey, why not?
+* Start with TFIDF approaches. Then try LSTMs, and add attention. If we get really far, then maybe BERT. But only we get far.
+
+## Progress
+* __9/25/19__: learned about tf-idf approaches. Notes here: [TFIDF.md](notes/TFIDF.md).
+  * tf-idf is a method for embedding documents. I could feed in the document embeddings as features to predict the essay scores. This seems straightforward. Where is a tf-idf implementation? How do I pre-process the text to feed in in the right form?
+
 
 * https://github.com/NirantK/awesome-project-ideas#text
 
@@ -27,8 +20,6 @@ slate, then try the methods found in literature.
   * There are four named entity's: person (PER), organization (ORG), location (LOC), and miscellaneous (MIS).
 2. Automated Essay Scoring, text classification: https://www.kaggle.com/c/asap-aes/data
 
-# BERT Overview
-[todo]
 
 # References
 * `pytorch_transformers` (Huggingface): https://github.com/huggingface/pytorch-transformers
