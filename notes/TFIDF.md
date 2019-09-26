@@ -1,7 +1,7 @@
 # Scoring, term weighting, and the vector space model
 Notes from chapter 6 of [_Introduction to Information Retrieval_](https://nlp.stanford.edu/IR-book/information-retrieval-book.html) by Chris Manning.
 
-## Tf-Idf
+## Tf-idf
 Tf-idf (term frequency-inverse document frequency) is a weighting scheme to tell how important a word is to a document. In tf-idf, a word's importance increases proportionally to the number of times the word appears in the document, but is offset by the frequency of the word in the corpus. Tf-idf weighting are often used as a central tool in search engines to rank relevant documents given a user query.
 
 We have two terms, tf and idf:
@@ -79,10 +79,8 @@ Maximum tf normalization suffers from the following issues:
 ### Pivoted normalized document length
 This method addresses the situation when some docuemnts are of vastly different lengths. Given that our dataset contains timed essays, I will assume the lengths are roughly similar. Therefore, I will skip this method.
 
-
 ## Summary
 We laid out a document embedding where the elements of the vector are weights assigned to each term in the vocabulary. If the term does not appear in the document, then its weight is zero. Otherwise, the weight for each term in a given document is given by the tf-idf weighting. There are many other weighting schemes available, but tf-idf offers us a baseline. Finally, note that the query is treated as a small document. Thus, we have not only a document embedding but also a sentence embedding.
-
 
 ## References
 1. http://www.tfidf.com
