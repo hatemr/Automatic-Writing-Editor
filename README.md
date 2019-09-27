@@ -12,6 +12,9 @@ Clear and effective communication is hard. Especially in a business with complex
 * __9/25/19__: learned about tf-idf approaches. Notes here: [TFIDF.md](notes/TFIDF.md).
   * tf-idf is a method for embedding documents. I could feed in the document embeddings as features to predict the essay scores. This seems straightforward. Where is a tf-idf implementation? How do I pre-process the text to feed in in the right form?
 * __9/26/19__: Pre-processed and vectorized essays `where essay_set=1` using tf-idf in `sklearn`. Need to lower the dimensionality because the number of samples is too low. Looks like SVD might help for dimensionality reduction. Look up latent semantic indexing. Obviously, PCA is one way to reduce dimensions.
+* __0/27/19__: I found the area of NLP that I want to target: [Text and discourse coherence](https://web.stanford.edu/~jurafsky/slp3/21.pdf). 
+  * We can use a _coherence_ measure as a predictor variable for essay scoring (e.g. [this paper](https://www.aclweb.org/anthology/D13-1180)).
+  * Indeed, _text coherence_ is [very useful for predicting _text readability_ and, yes, _essay scoring_](https://www.aclweb.org/anthology/D18-1464). This paper proposes a next coherence measure and uses it to achieve SoA on readability and essay scoring.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
