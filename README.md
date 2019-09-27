@@ -17,6 +17,7 @@ Clear and effective communication is hard. Especially in a business with complex
 * __0/27/19__: I found the area of NLP that I want to target: [Text and discourse coherence](https://web.stanford.edu/~jurafsky/slp3/21.pdf). 
   * We can use a _coherence_ measure as a predictor variable for essay scoring (e.g. [this paper](https://www.aclweb.org/anthology/D13-1180)).
   * Indeed, _text coherence_ is [very useful for predicting _text readability_ and, yes, _essay scoring_](https://www.aclweb.org/anthology/D18-1464). This paper proposes a next coherence measure and uses it to achieve SoA on readability and essay scoring.
+  * A list of features used by EASE (winner of ASAP competition) on page 434 [here](https://www.cs.cmu.edu/~ark/EMNLP-2015/proceedings/EMNLP/pdf/EMNLP049.pdf).
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
