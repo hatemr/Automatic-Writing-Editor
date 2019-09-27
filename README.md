@@ -1,11 +1,12 @@
-# Text Classification
-For essay scoring.
+# Text Classification for Essay Scoring
+To help us write better.
 
 # Business Problem
 Clear and effective communication is hard. Especially in a business with complex goals and shifting demands. That's why I am building a writing editor, to automatically grade one's writing. This tool aims to help people write reports in clear, concise prose.
 
 ## Plan
-* Start with TFIDF approaches. Then try LSTMs, and add attention. If we get really far, then maybe BERT. But only we get far.
+* Start with TFIDF approaches. Get a simple working model, then deploy using Flask+AWS.
+* After the model is deployed online, refine the model and try fancier NLP techniques, like LSTMs, then add attention.
 
 ## Progress
 * __9/25/19__: learned about tf-idf approaches. Notes here: [TFIDF.md](notes/TFIDF.md).
