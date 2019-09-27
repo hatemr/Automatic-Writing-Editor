@@ -10,6 +10,7 @@ Clear and effective communication is hard. Especially in a business with complex
 ## Progress
 * __9/25/19__: learned about tf-idf approaches. Notes here: [TFIDF.md](notes/TFIDF.md).
   * tf-idf is a method for embedding documents. I could feed in the document embeddings as features to predict the essay scores. This seems straightforward. Where is a tf-idf implementation? How do I pre-process the text to feed in in the right form?
+* __9/26/19__: Pre-processed and vectorized essays `where essay_set=1` using tf-idf in `sklearn`. Need to lower the dimensionality because the number of samples is too low. Looks like SVD might help for dimensionality reduction. Look up latent semantic indexing. Obviously, PCA is one way to reduce dimensions.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
