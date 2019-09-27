@@ -1,0 +1,11 @@
+name: essay_scoring
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - spacy
+  - flask
