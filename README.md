@@ -14,10 +14,12 @@ Clear and effective communication is hard. Especially in a business with complex
 * __9/26/19__: Pre-processed and vectorized essays `where essay_set=1` using tf-idf in `sklearn`. 
   * Need to lower the dimensionality because the number of samples is too low. 
   * Looks like SVD might help for dimensionality reduction. Look up latent semantic indexing. Obviously, PCA is one way to reduce dimensions.
-* __0/27/19__: I found the area of NLP that I want to target: [Text and discourse coherence](https://web.stanford.edu/~jurafsky/slp3/21.pdf). 
+* __9/27/19__: I found the area of NLP that I want to target: [Text and discourse coherence](https://web.stanford.edu/~jurafsky/slp3/21.pdf). 
   * We can use a _coherence_ measure as a predictor variable for essay scoring (e.g. [this paper](https://www.aclweb.org/anthology/D13-1180)).
   * Indeed, _text coherence_ is [very useful for predicting _text readability_ and, yes, _essay scoring_](https://www.aclweb.org/anthology/D18-1464). This paper proposes a next coherence measure and uses it to achieve SoA on readability and essay scoring.
   * A list of features used by EASE (winner of ASAP competition) on page 434 [here](https://www.cs.cmu.edu/~ark/EMNLP-2015/proceedings/EMNLP/pdf/EMNLP049.pdf).
+  * I created the length-based features from the paper above. Next, I need to apply SVD to the term-document matrix.
+  * This model won't be pretty, it won't follow the best research on the task, but the point is to get a working prototype as quickly as possible, then refine it.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
