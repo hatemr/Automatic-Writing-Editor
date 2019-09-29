@@ -102,9 +102,6 @@ def build_model(data, target):
     return
 
 
-
-
-
 # class Ease_feature_extractor:
 #     def __init__(self, ):
 #         self.__feature_names = ['num_chars', 'num_words', 'num_commas', 'num_apostrophies', 'sent_end_punc', 'avg_sent_len', 'avg_word_len']
