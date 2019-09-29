@@ -1,7 +1,7 @@
 # Text Classification for Essay Scoring
 To help us write better.
 
-`conda env create -f environment.yml`
+`conda env create -f environment.yml`  
 `conda activate essy_scoring`
 
 # Business Problem
