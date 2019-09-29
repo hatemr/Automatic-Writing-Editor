@@ -54,6 +54,7 @@ def load_data(prompts=[1],
     return data, target
 
 
+
 def build_model(data, target):
     """
     Transform text corpus into a document vector.
