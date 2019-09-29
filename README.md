@@ -22,11 +22,9 @@ Clear and effective communication is hard. Especially in a business with complex
   * Indeed, _text coherence_ is [very useful for predicting _text readability_ and, yes, _essay scoring_](https://www.aclweb.org/anthology/D18-1464). This paper proposes a next coherence measure and uses it to achieve SoA on readability and essay scoring.
   * A list of features used by EASE (winner of ASAP competition) on page 434 [here](https://www.cs.cmu.edu/~ark/EMNLP-2015/proceedings/EMNLP/pdf/EMNLP049.pdf).
   * I created the length-based features from the paper above. Next, I need to apply SVD to the term-document matrix.
-  * This model won't be pretty, it won't follow the best research on the task, but the point is to get a working prototype as quickly as possible, then refine it.
 * __9/28/19__: I made a pipeline to pre-process the data, using SVD dim. reduction, and a grid search with SGDClassifier using logistic regression.
   * Next, I need to measure the performance of the model.
   * Also, need to extract the prompts from words docs and save in a .txt file.
-  * If the model is good enough, I want to shift to deploying on Flask.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
