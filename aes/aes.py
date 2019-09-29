@@ -1,23 +1,22 @@
 #https://scikit-learn.org/stable/auto_examples/model_selection/grid_search_text_feature_extraction.html#sphx-glr-download-auto-examples-model-selection-grid-search-text-feature-extraction-py
-import numpy as np
 import pandas as pd
-import matplotlib as plt
-#plt.ioff()
-from pprint import pprint
 from time import time
-import logging
-import nltk
-import re
-from collections import defaultdict
 
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
 from sklearn.preprocessing import Normalizer
 from sklearn.linear_model import SGDClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
+from time import time
+
+import pandas as pd
+from sklearn.decomposition import TruncatedSVD
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import SGDClassifier
+from sklearn.model_selection import GridSearchCV
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import Normalizer
 
 
 def load_data(prompts=[1], 
