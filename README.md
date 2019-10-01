@@ -26,6 +26,8 @@ Clear and effective communication is hard. Especially in a business with complex
   * Next, I need to measure the performance of the model.
   * Also, need to extract the prompts from words docs and save in a .txt file.
   * I didn't use the length-based features, only the LSA features. I will add them in later as a pipeline step in sklearn.
+* __9/29/19__: Started learning Flask.
+* __9/29/19__: Continued learning Flask. Many roadblocks when following tutorials.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
