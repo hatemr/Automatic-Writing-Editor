@@ -9,6 +9,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
 from time import time
+from joblib import dump, load
 
 import pandas as pd
 from sklearn.decomposition import TruncatedSVD
@@ -98,6 +99,8 @@ def build_model(data, target):
     print("Fitting grid search")
     grid_search.fit(data, target)
     print('Done fitting in {:.0f} seconds'.format(time()-t0))
+
+    dump(grid_search, 'grid_search.joblib')
     print(grid_search.best_score_, grid_search.scorer_, grid_search.cv_results_.keys())
     return
 
