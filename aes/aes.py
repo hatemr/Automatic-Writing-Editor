@@ -36,6 +36,7 @@ def load_data(prompts=[1],
     data = list(df.essay)
     domain1_score = df.domain1_score
 
+    # to combine sparse classes
     if bucketize:
         target = pd.qcut(domain1_score, num_buckets, labels=False, duplicates='drop')
         
@@ -46,7 +47,8 @@ def load_data(prompts=[1],
         target = target.values
     else:
         target = domain1_score.values
-    
+
+    # to make sure
     assert type(data)==list
     assert len(data)==target.shape[0]
 
@@ -72,16 +74,26 @@ def build_model(data, target):
     
     """
 
+    # Pipeline first apply tf-idf, then reduced the dimension using SVD (PCA),
+    # then Normalizer normalizes the rows (observations) to be length one by dividing
+    # by the l2 norm. This allows the cosine similarity of two document vectors to be
+    # the inner product of the two doc vecs. This is convention in the Information
+    # Retrieval community. Could also get the same result by using norm: 'l2' in
+    # TfidfVectorizer.
+
+    # The classifier used is logistic regression
     pipeline = Pipeline([
         ('vec', TfidfVectorizer(stop_words='english', use_idf=True)), 
         ('svd', TruncatedSVD()), 
         ('norm', Normalizer(copy=False)),
         ('clf', SGDClassifier(loss='log', tol=1e-3))])
 
-    # X = pipeline.fit_transform(data)
-    # clf = SGDClassifier(loss='log')
-    # clf.fit(X, target)
-
+    # max_df: If int, ignores terms that appear in more than max_df documents.
+    # Can be used to discard unuseful words.
+    # max_features: take only the top max_features words ordered by term
+    # frequency.
+    # ngram_range: takes individual terms (1grams) or also 2grams in its vocab.
+    # The last two are number of final PCs and regularization strength.
     parameters = {
         #'vec__max_df': (None), #0.5, 0.75, 1.0),
         #'vec__max_features': (None), # 100, 500, 1000, 10000),
@@ -100,10 +112,13 @@ def build_model(data, target):
     grid_search.fit(data, target)
     print('Done fitting in {:.0f} seconds'.format(time()-t0))
 
+    # save model. Use pickle + dictionaries instead
     dump(grid_search, 'grid_search.joblib')
     print(grid_search.best_score_, grid_search.scorer_, grid_search.cv_results_.keys())
     return
 
+# Custom transformer to extract more features.
+# To be added to Pipeline later.
 
 # class Ease_feature_extractor:
 #     def __init__(self, ):
