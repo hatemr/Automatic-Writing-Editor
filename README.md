@@ -30,8 +30,8 @@ Clear and effective communication is hard. Especially in a business with complex
 * __9/30/19__: Continued learning Flask. Many roadblocks when following tutorials.
 * __10/1/19__: Continued with Flask tutorials. Overcoming many hurdles and debugging a lot but it's coming along.
   * Added comments to aes.py.
-  * __10/10/19__: Worked on Flask app. Changed input text to paragraph instead of one line. Started adding ML model to the app.
-  
+* __10/10/19__: Worked on Flask app. Changed input text to paragraph instead of one line. Started adding ML model to the app.
+* __10/11/19__: Added essay grade prediction. Still need to get the database working.  
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
