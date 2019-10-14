@@ -32,7 +32,7 @@ Clear and effective communication is hard. Especially in a business with complex
   * Added comments to aes.py.
 * __10/10/19__: Worked on Flask app. Changed input text to paragraph instead of one line. Started adding ML model to the app.
 * __10/11/19__: Added essay grade prediction. Still need to get the database working.
-* __10/13/19__: I tried to get the databases to work for a couple hours, with not success.
+* __10/13/19__: I tried to get the databases to work for a couple hours, with not success. After talking with Amit, we got it to work. Problem was I needed to define the port since my datbase uses a non-default port (5433).
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
