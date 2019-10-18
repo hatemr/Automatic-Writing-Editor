@@ -36,6 +36,7 @@ Clear and effective communication is hard. Especially in a business with complex
 * __10/14/19__: Read about Flask Boostrap. I don't yet see how I can use it to make my app prettier.
 * __10/15/19__: Read about HTML and CSS. Glad to learn, but I need a _quick_ way to make my app look nicer. Just moving text around and adding color is not what I need, I need it to look slick.
 * __10/16/19__: Continued reading about HTML and CSS. Still mystified.
+* __10/18/19__: Breakthrough. I added a Bootstrap Theme to Flask, using the tutorial [here](https://www.youtube.com/watch?v=3NsEGaCIT38). This is exactly what I wanted.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
