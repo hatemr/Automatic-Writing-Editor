@@ -34,7 +34,8 @@ Clear and effective communication is hard. Especially in a business with complex
 * __10/11/19__: Added essay grade prediction. Still need to get the database working.
 * __10/13/19__: I tried to get the databases to work for a couple hours, with not success. After talking with Amit, we got it to work. Problem was I needed to define the port since my datbase uses a non-default port (5433).
 * __10/14/19__: Read about Flask Boostrap. I don't yet see how I can use it to make my app prettier.
-* __10/16/19__: Continued reading about Flask-Boostrap. Still mystified.
+* __10/15/19__: Read about HTML and CSS. Glad to learn, but I need a _quick_ way to make my app look nicer. Just moving text around and adding color is not what I need, I need it to look slick.
+* __10/16/19__: Continued reading about HTML and CSS. Still mystified.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
