@@ -38,6 +38,7 @@ Clear and effective communication is hard. Especially in a business with complex
 * __10/16/19__: Continued reading about HTML and CSS. Still mystified.
 * __10/18/19__: Breakthrough. I added a Bootstrap Theme to Flask, using the tutorial [here](https://www.youtube.com/watch?v=3NsEGaCIT38). This is exactly what I wanted.
 * __10/19/19__: Incorporated Jinja extends with the bootstrap/base.html (I think this is where Flask-Bootstrap comes into play).
+* __10/23/19__: Debugged database connection to avoid circular imports. The app's frontend is ready. So I should work on the conent.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
