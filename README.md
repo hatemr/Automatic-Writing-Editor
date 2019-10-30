@@ -1,4 +1,4 @@
-# Text Classification for Essay Scoring
+# Automatic Writing Editor
 To help us write better.
 
 `conda env create -f environment.yml`  
