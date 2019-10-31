@@ -7,10 +7,6 @@ To help us write better.
 # Business Problem
 Clear and effective communication is hard. Especially in a business with complex goals and shifting demands. That's why I am building a writing editor, to automatically grade one's writing. This tool aims to help people write reports in clear, concise prose.
 
-## Plan
-* Start with TFIDF approaches. Get a simple working model, then deploy using Flask+AWS.
-* After the model is deployed online, refine the model and try fancier NLP techniques, like LSTMs, then add attention.
-
 ## Progress
 * __9/25/19__: learned about tf-idf approaches. Notes here: [TFIDF.md](notes/TFIDF.md).
   * tf-idf is a method for embedding documents. I could feed in the document embeddings as features to predict the essay scores. This seems straightforward. Where is a tf-idf implementation? How do I pre-process the text to feed in in the right form?
@@ -41,6 +37,12 @@ Clear and effective communication is hard. Especially in a business with complex
 * __10/23/19__: Debugged database connection to avoid circular imports. The app's frontend is ready. So I should work on the conent.
 * __10/27/19__: Started working on applying the writing rule "keep subject near their verbs". 3 hours.
 * __10/28/19__: Wrote code to highlight the words which violated the rules, and improved the function's code. 2 hours.
+* __10/31/19__: Wrote feedback message for the subject-verb distance. Function can handle only one sentence, not multiple sentences.
+
+## Known Issues
+Subject-verb distance
+* The function sometimes fails to find the subject or verb.
+* The function can handle one sentence only, not multiple sentences.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
