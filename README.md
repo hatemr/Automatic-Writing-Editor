@@ -37,12 +37,11 @@ Clear and effective communication is hard. Especially in a business with complex
 * __10/23/19__: Debugged database connection to avoid circular imports. The app's frontend is ready. So I should work on the conent.
 * __10/27/19__: Started working on applying the writing rule "keep subject near their verbs". 3 hours.
 * __10/28/19__: Wrote code to highlight the words which violated the rules, and improved the function's code. 2 hours.
-* __10/31/19__: Wrote feedback message for the subject-verb distance. Function can handle only one sentence, not multiple sentences.
+* __10/31/19__: Wrote feedback message for the subject-verb distance. Function can handle only one sentence, not multiple sentences. Next, make app look nicer, but replicating Hugging Face's word highlighting.
 
 ## Known Issues
 Subject-verb distance
 * The function sometimes fails to find the subject or verb.
-* The function can handle one sentence only, not multiple sentences.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
