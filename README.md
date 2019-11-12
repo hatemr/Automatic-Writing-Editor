@@ -38,6 +38,8 @@ Clear and effective communication is hard. Especially in a business with complex
 * __10/27/19__: Started working on applying the writing rule "keep subject near their verbs". 3 hours.
 * __10/28/19__: Wrote code to highlight the words which violated the rules, and improved the function's code. 2 hours.
 * __10/31/19__: Wrote feedback message for the subject-verb distance. Function can handle only one sentence, not multiple sentences. Next, make app look nicer, but replicating Hugging Face's word highlighting.
+* I worked on the app during this time but forgot to record it.
+* __11/11/19__: Added login and profile page.
 
 ## Known Issues
 Subject-verb distance
