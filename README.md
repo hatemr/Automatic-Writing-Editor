@@ -40,6 +40,7 @@ Clear and effective communication is hard. Especially in a business with complex
 * __10/31/19__: Wrote feedback message for the subject-verb distance. Function can handle only one sentence, not multiple sentences. Next, make app look nicer, but replicating Hugging Face's word highlighting.
 * I worked on the app during this time but forgot to record it.
 * __11/11/19__: Added login and profile page.
+* __11/13/19__: Finished errors chapter of Mega tutorial. Still need to make a homepage unique to each user, and their editing page.
 
 ## Known Issues
 Subject-verb distance
