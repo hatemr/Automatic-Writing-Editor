@@ -43,10 +43,9 @@ Clear and effective communication is hard. Especially in a business with complex
 * __11/12/19__: Finished chapter 6 (Profile Page and Avatars) and started chapter 7 (Error Handling).
 * __11/13/19__: Finished errors chapter of Mega tutorial. Still need to make a homepage unique to each user, and their editing page.
 * __11/15/19__: I deleted some databases on Heroku that I had made without knowing what I was doing. The database was working fine on Heroku, just it was empty. Then, I tried to use `heroku pg:push wordcount_dev DATABASE_URL --app wordcount-stage-hatem` to push the contents of my local database to Heroku's database. However, it rejected my password for `wordcount_dev`. I'm thought the password was right but I guess not. I will skip pushing and save it for later. I don't need my local development database data to test the app on Heroku (yet). Also, note that any time I migrate the database locally, I must migrate on Heroku too.
+* __missed some days here__
+* __11/21/19__: Cleaned up login-logout and layout. Removed Profile tab from top when not logged in. App's frontend is mostly done. Still can lots of functionality in the editing.
 
-## Known Issues
-Subject-verb distance
-* The function sometimes fails to find the subject or verb.
 
 # Datasets
 1. CoNLL-2003, named entity recognition (NER): https://www.aclweb.org/anthology/W03-0419
